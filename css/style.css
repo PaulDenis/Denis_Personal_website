@@ -1,0 +1,143 @@
+/* common */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+nav {
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #ff6500;
+}
+
+header img {
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 90px;
+    border: 1px solid #ff6500;
+
+}
+header img:hover {
+    cursor: pointer;
+}
+.active {
+    background-color: #ff6500;
+}
+
+.inline_menu {
+    padding-left: 10px;
+    list-style: none;
+    display: inline-block;
+}
+.inline_menu > li {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ff6500;
+    border-radius: 20px;
+}
+.inline_menu > li:hover {
+    cursor: pointer;
+    background-color: #ff6500;
+}
+.inline_menu >li:hover a {
+    color: white;
+}
+.inline_menu a {
+    text-decoration: none;
+    color: #ff6500;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
+
+.navigation li {
+    margin: 0 20px;
+}
+
+/* main */
+#landing_page {
+    padding-top: 100px;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/Web-Developer-Wallpaper-84+-images-.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 50px 50px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255, 101, 0, .6);
+    color: white;
+}
+.text:hover {
+    cursor: pointer;
+    background-color: rgb(255, 101, 0);
+}
+.text h1 {
+    font-size: 50px;
+}
+
+#about_me {
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.left {
+    float: left;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.left img {
+    height: calc(100vh - 300px);
+    border: 1px solid #ff6500;
+    border-radius: 50%;
+}
+.right {
+    padding-right: 20px;
+    width: 48%;
+    float: right;
+    margin-top: 50px;
+}
+.boolean {
+    text-decoration: none;
+    font-size: 20px;
+    color: #0cd977;
+}
+.boolean:hover {
+    color: #006cfa;
+}
+.right h2 {
+    margin-top: 25px;
+    font-size: 40px;
+    color: #ff6500;
+}
+.right p {
+    font-size: 18px;
+}
